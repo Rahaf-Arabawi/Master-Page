@@ -2,12 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/welcome', function () {
+    return view('welcome');
 });
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/layout', function () {
+    return view('layout.layout');
 });
 
-
+Route::get('/test', function () {
+    return view('test');
+});
